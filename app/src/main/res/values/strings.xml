@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">點餐App</string>
+    <string name="title">選擇餐點：</string>
+    <string name="chicken">雞排 120元</string>
+    <string name="pork">豬排 110元</string>
+    <string name="steak">牛排 120元</string>
+    <string name="title2">輸入份數：</string>
+    <string name="check">結帳</string>
+    <string name="total">總共</string>
+    <string name="dollar">元</string>
+</resources>

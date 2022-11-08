@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textColor="#7607eb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <RadioGroup
+        android:id="@+id/rgMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.243">
+
+        <RadioButton
+            android:id="@+id/rbPig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pork" />
+
+        <RadioButton
+            android:id="@+id/rbChicken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chicken" />
+
+        <RadioButton
+            android:id="@+id/rbSteak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/steak" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:text="@string/title2"
+        android:textColor="#cf1d20"
+        app:layout_constraintEnd_toEndOf="@+id/title"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <Button
+        android:id="@+id/btCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/check"
+        app:layout_constraintEnd_toEndOf="@+id/etCount"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/etCount"
+        app:layout_constraintTop_toBottomOf="@+id/etCount" />
+
+    <EditText
+        android:id="@+id/etCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/rgMenu"
+        app:layout_constraintStart_toStartOf="@+id/rgMenu"
+        app:layout_constraintTop_toBottomOf="@+id/rgMenu" />
+
+    <TextView
+        android:id="@+id/tvBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColor="#25d96a"
+        app:layout_constraintEnd_toEndOf="@+id/btCheck"
+        app:layout_constraintStart_toStartOf="@+id/btCheck"
+        app:layout_constraintTop_toBottomOf="@+id/btCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
